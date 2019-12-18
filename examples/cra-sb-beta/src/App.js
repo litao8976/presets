@@ -1,13 +1,16 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import logo from './assets/logo.svg';
-import './App.css';
+import Button from './components/Button/Button';
+import './App.scss';
 
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
+        <Button>{process.env.REACT_APP_TEST_VAR}</Button>
+        <nav>test scss</nav>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
